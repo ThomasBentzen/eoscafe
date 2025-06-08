@@ -1,0 +1,55 @@
+section {
+  border-bottom: solid 1px #ddd;
+  padding-bottom: 10px;
+}
+
+section:last-child {
+  border: none;
+}
+
+section h2 {
+  color: #912124;
+  font-family: georgia;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+section article span {
+  font-style: italic;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+article {
+  height: 80px;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+}
+
+article img {
+  border: solid 1px black;
+  float: left;
+  margin-right: 45px;
+  max-height: 100%; /*Lig article-højden*/
+}
+
+article h3 {
+  font-family: georgia;
+  font-size: 14px;
+  color: #988;
+}
+
+.drinks article {
+  height: 40px;  
+}
+
+
+.recommended span::before {
+  content: "Kokken anbefaler!";
+  margin-right: 20px;
+  color: #912124;
+}

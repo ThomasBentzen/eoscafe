@@ -1,0 +1,228 @@
+/*GENERELT*/
+* {margin: 0; padding: 0;} /*Fjern standardafstande*/
+
+body {
+  background-color: #929292;
+}
+
+#container {
+  background-color: #e6e6e6;
+  margin: auto; /*Centrering*/
+  width: 1000px;
+}
+
+
+/*SIDEHOVED*/
+header {
+  background-color: white;
+  border-bottom: solid 1px #dad9d9;
+  border-top: solid 3px #912124;
+  height: 180px;
+  position: relative;
+}
+
+header nav { /*Topmenu*/
+  bottom: 20px;
+  height: 30px;
+  position: absolute;
+  right: 100px;
+}
+
+header nav a { /*Topmenu-links*/
+  color: #979696;
+  font-family: Verdana;
+  font-size: 14px;
+  margin: 0 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header nav a:hover {
+  border-bottom: solid 3px #912124;
+  color: #606060;
+}
+
+#logo {
+  width: 160px;
+  height: 144px;
+  margin: 20px 0 0 90px;
+}
+
+
+/*SIDEMENU*/
+#submenu {
+  float: left;
+  width: 200px;
+}
+
+#submenu ul {
+  float: right;
+  list-style: none;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#submenu ul a {
+  color: #912214;
+  font-family: verdana;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+#submenu ul a:hover {
+  color: black;
+}
+
+#submenu li {
+  margin: 10px 0;
+}
+
+/*INDHOLD*/
+#content {
+  background-color: #ededed;
+  color: #1f1f1f;
+  float: right;
+  font-family: arial;
+  font-size: 12px;
+  min-height: 200px;  /*Større end #submenu's højde*/
+  padding: 50px;
+  width: 650px; /*750px minus padding*/
+}
+
+#content h1 {
+  color: #525252;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#content p {
+  margin: 5px 0;
+}
+
+#content a {
+  color: #6ba6c1;
+}
+
+#content a:hover {
+  text-decoration: none;
+}
+
+#manchet {
+  color: #912124;
+  font-family: georgia;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+#manchet img {
+  float: left;
+  margin-right: 10px;
+}
+
+#img1 {
+  float: right;
+  height: 180px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+}
+
+#img2 {
+  height: 180px;
+}
+
+#img3 {
+  float: right;
+  height: 180px;
+}
+
+#text {
+  margin-bottom: 40px;
+  min-height: 180px   /*Lig #img1's højde*/
+}
+
+
+
+/*SIDEFOD*/
+footer {
+  background-color: #1f1f1f;
+  clear: both;
+  color: white;
+  font-family: arial;
+  font-size: 12px;
+  padding-top: 30px;
+}
+
+#openhours {
+  float: left;
+  margin: 0 30px 0 300px;
+}
+
+footer table,
+address {
+  font-style: normal;
+  line-height: 150%;
+}
+
+footer h2,
+footer caption {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+footer th {
+  text-align: left;
+}
+
+footer td:nth-child(2) {
+  padding-right: 60px;
+}
+
+
+footer hr {
+  border-bottom: solid 1px #292929;
+  border-left: none;
+  border-right: none;
+  border-top: solid 1px #030303;
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 5px 0;
+}
+
+address a {
+  color: white;
+  text-decoration: none;
+}
+
+address a:hover {
+  text-decoration: underline;
+}
+
+#socialicons {
+  clear: both;
+  padding: 20px 80px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#socialicons img {
+  vertical-align: middle;
+}
+
+#socialicons span {
+  position: absolute;
+  right: 80px;
+  top: 30px;
+}
+
+header > a:hover,
+#socialicons a:hover {
+  opacity: 0.6;
+}
